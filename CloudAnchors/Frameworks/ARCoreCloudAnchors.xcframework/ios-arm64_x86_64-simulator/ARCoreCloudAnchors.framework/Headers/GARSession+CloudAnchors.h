@@ -27,7 +27,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /** Category adding Cloud Anchor functionality to `GARSession`. */
-API_AVAILABLE(ios(11.0))
+API_AVAILABLE(ios(13.0))
 @interface GARSession (CloudAnchors)
 
 /**
