@@ -2,9 +2,7 @@ Pod::Spec.new do |s|
   s.name             = 'ARCoreNanoPbUpdated'
   s.version          = '1.45.0'
   s.summary          = 'Custom ARCore SDK with updated nanopb dependency.'
-  s.description      = <<-DESC
-    A custom version of the ARCore SDK for iOS that includes an updated nanopb dependency to resolve compatibility issues with Firebase.
-  DESC
+  s.description      = ' A custom version of the ARCore SDK for iOS that includes an updated nanopb dependency to resolve compatibility issues with Firebase.'
   s.homepage         = 'https://developers.google.com/ar/'
   s.license          = { :type => 'Apache License, Version 2.0', :file => 'LICENSE' }
   s.authors          = { 'Google, Inc.' => 'google-ar-sdk@google.com' }
@@ -29,7 +27,7 @@ Pod::Spec.new do |s|
     base.frameworks = ['CoreTelephony', 'Foundation', 'SystemConfiguration', 'Security', 'UIKit']
     base.libraries = ['c++', 'z']
     base.preserve_paths = ['Base/dummy.m', 'Base/Sources/ARCore/module.modulemap']
-    base.dependency 'nanopb', '~> 3.30910.0'  # Updated nanopb dependency
+    base.dependency 'nanopb', '~> 3.30910.0'
     base.dependency 'GoogleDataTransport', '~> 9.2'
   end
 
@@ -44,8 +42,6 @@ Pod::Spec.new do |s|
     cloud.dependency 'nanopb', '~> 3.30910.0'
   end
 
-  # Ajoute les autres sous-spécifications ici, en suivant le modèle ci-dessus
-  # Exemple de sous-spec additionnelle pour GARSession
   s.subspec 'GARSession' do |gar|
     gar.source_files = 'GARSession/Sources/dummy.h'
     gar.vendored_frameworks = 'GARSession/Frameworks/ARCoreGARSession.xcframework'
@@ -59,6 +55,4 @@ Pod::Spec.new do |s|
     gar.dependency 'Firebase/RemoteConfig', '>= 8.0', '< 11.0'
     gar.dependency 'nanopb', '~> 3.30910.0'
   end
-
-  # Continue avec les autres sous-specs similaires...
 end
