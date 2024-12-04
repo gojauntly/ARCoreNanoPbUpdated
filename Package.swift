@@ -30,7 +30,7 @@ let package = Package(
     .package(
       url: "https://github.com/google/GoogleDataTransport.git", .upToNextMajor(from: "10.1.0")),
     .package(url: "https://github.com/google/gtm-session-fetcher.git", "2.1.0" ..< "4.0.0"),
-    .package(url: "https://github.com/firebase/firebase-ios-sdk.git", "8.0.0" ..< "11.4.2"),
+    .package(url: "https://github.com/firebase/firebase-ios-sdk.git", "8.0.0" ..< "12.0.0"),
   ],
   targets: [
     .binaryTarget(
