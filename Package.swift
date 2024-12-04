@@ -28,7 +28,7 @@ let package = Package(
   dependencies: [
     .package(url: "https://github.com/firebase/nanopb.git", "2.30909.0" ..< "2.30910.0"),
     .package(
-      url: "https://github.com/google/GoogleDataTransport.git", .upToNextMajor(from: "10.1.0")),
+      url: "https://github.com/google/GoogleDataTransport.git", "2.1.0" ..< "11.0.0"),
     .package(url: "https://github.com/google/gtm-session-fetcher.git", "2.1.0" ..< "4.0.0"),
     .package(url: "https://github.com/firebase/firebase-ios-sdk.git", "8.0.0" ..< "12.0.0"),
   ],
