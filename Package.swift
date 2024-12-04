@@ -63,7 +63,8 @@ let package = Package(
       publicHeadersPath: "Sources"
     ),
     .binaryTarget(
-      name: "ARCoreGeospatial", path: "Geospatial/Frameworks/ARCoreGeospatial.xcframework"
+      name: "ARCoreGeospatial", path: "https://dl.google.com/arcore/swiftpm/1.46.0/Geospatial.zip",
+      checksum: "b9f0bc8a454a28149d2fffc55f88ec773181dc646682f303c520178df21f0365k"
     ),
     .target(
       name: "Geospatial",
@@ -76,7 +77,8 @@ let package = Package(
       publicHeadersPath: "Sources"
     ),
     .binaryTarget(
-      name: "ARCoreGARSession", path: "GARSession/Frameworks/ARCoreGARSession.xcframework"
+      name: "ARCoreGARSession", path: "https://dl.google.com/arcore/swiftpm/1.46.0/GARSession.zip",
+      checksum: "13c0c0bd2b738917a4a4fb4ae11b78bbe939737c7dccb626318921e537bc9570"
     ),
     .target(
       name: "GARSession",
